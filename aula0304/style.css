@@ -7,12 +7,19 @@ body {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
-  place-items: start end;
 }
 
-.foto {
-  grid-column: 1/ -1;
+.titulo {
+  grid-column: 1/-1;
 }
+
+.info {
+  place-self: start;
+  display: grid;
+  place-items: start;
+  gap: 20px;
+}
+
 
 
 h1,
@@ -25,7 +32,8 @@ h1 {
   line-height: 1;
 }
 
-p, span {
+p,
+span {
   font-size: 20px;
 }
 
@@ -38,13 +46,12 @@ p, span {
   font-size: 20px;
 }
 
-
 img {
   max-width: 100%;
   border-radius: 4px;
 }
 .preco {
-  background : #ddd;
+  background: #ddd;
   padding: 5px 10px;
-  border-radius:4px;
+  border-radius: 4px;
 }
