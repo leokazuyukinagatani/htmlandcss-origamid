@@ -1,0 +1,34 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: #b2b2b2;
+  margin: 10px 0;
+}
+ 
+.card {
+  background: #111;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+button {
+  background: #febe01;
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+  
+}
+
+strong {
+  color: #febe01;
+}
