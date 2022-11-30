@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  place-content: center;
+  background: chocolate;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  background: #e1e1e1;
+  border: 1px solid #f8f;
+  padding: 20px;
+  margin: 0;
+  /* flex-grow:1 - elemento cresca flex-shrink:1 - elemento pode quebrar a linha flex-basis:0% - espaço igual entre os elementos*/
+  flex: 1;
+}
