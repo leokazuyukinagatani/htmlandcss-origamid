@@ -38,9 +38,12 @@
 @media (max-width: 800px) {
 
   .introducao h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
   
+  .introducao img {
+    display: none;
+  }
   .introducao h1::before {
     display: none;
   }
