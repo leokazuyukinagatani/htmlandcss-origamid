@@ -1,12 +1,4 @@
-.introducao {
-  max-width: 1200px;
-  padding: 2.5rem 1.25rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 6.25rem;
-  align-items: center;
-}
+
 
 .introducao .avatar {
   border-radius: 20px;
@@ -44,10 +36,6 @@
 }
 
 @media (max-width: 800px) {
-  .introducao {
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-  }
 
   .introducao h1 {
     font-size: 2rem;
@@ -58,15 +46,3 @@
   }
 }
 
-@media (max-width: 500px) {
-  .introducao {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding: 3rem;
-  }
-
-  .introducao img {
-    display: none;
-  }
-  
-}
