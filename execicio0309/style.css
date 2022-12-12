@@ -1,7 +1,27 @@
+:root {
+  --primary-500: #e21;
+  --primary-700: #900;
+  --bg-color-100: #fff;
+  --bg-color-300: #f7f7f7;
+  --text-color-900: #000;
+  --text-color-500: rgba(0, 0, 0, 0.2);
+  --wave: url("./img/onda-clara.svg");
+}
+
+@media (prefers-color-scheme: dark) {
+  --primary-500: #e21;
+  --primary-700: #900;
+  --bg-color-100: #111;
+  --bg-color-300: #000;
+  --text-color-900: #fff;
+  --text-color-500: rgba(255, 255, 255, 0.2);
+  --wave: url("./img/onda-escura.svg");
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #f7f7f7;
+  background: var(--bg-color-300);
   display: grid;
   gap: 3.75rem;
   justify-items: center;
@@ -38,7 +58,7 @@ p {
   gap: 3.75rem;
 }
 
-.header img {
+.header svg {
   margin: 0 auto;
 }
 
@@ -58,12 +78,12 @@ nav ul {
 }
 
 .menu a {
-  background: #fff;
+  background: var(--bg-color-100);
   padding: 1rem 2rem;
   border-radius: 4px;
-  color: #000;
+  color: var(--text-color-900);
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 1px solid var(--bg-color-100);
 }
 .menu a:hover {
   border-color: red;
@@ -76,7 +96,7 @@ nav ul {
 }
 
 .introducao {
-  background: #fff;
+  background: var(--bg-color-100);
   padding: 2.5rem;
   text-align: right;
   position: relative;
@@ -94,7 +114,7 @@ nav ul {
   content: " ";
   width: 3.75rem;
   height: 4px;
-  background: #e21;
+  background: var(--primary-500);
   position: absolute;
   right: 0px;
   right: -2rem;
@@ -102,10 +122,9 @@ nav ul {
 }
 
 .introducao-cover {
-
 }
 .botao {
-  background: #e21;
+  background: var(--primary-500);
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 4px;
@@ -113,21 +132,21 @@ nav ul {
   border: none;
 }
 .botao:hover {
-  background: #900;
+  background: var(--primary-700);
 }
 
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: #c3c3c3;
+  color: var(--text-color-500);
   text-align: right;
   padding: 2.5rem;
   align-self: center;
-  background-image: url("./img/onda.svg");
+  background-image: var(--wave);
 }
 
 .vantagens {
-  background: #fff;
+  background: var(--bg-color-100);
   padding: 2.5rem;
 }
 
@@ -148,15 +167,14 @@ nav ul {
 }
 
 .rodape {
-  background: #fff;
+  background: var(--bg-color-100);
   width: 100%;
   text-align: center;
   padding: 2.5rem;
   box-sizing: border-box;
 }
 
-
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   html {
     font-size: 87.5%;
   }
@@ -166,12 +184,12 @@ nav ul {
   .subtitulo {
     text-align: center;
   }
-  .introducao::before{
+  .introducao::before {
     content: none;
   }
 }
 
-@media(max-width:320px){
+@media (max-width: 320px) {
   html {
     font-size: 75%;
   }
