@@ -1,9 +1,10 @@
+/* Cores */
+@import './utilidades/cores.css';
 /* Global and Reset CSS */
 @import './global/global.css';
 /* Tipografia */
 @import './utilidades/tipografia.css';
-/* Cores */
-@import './utilidades/cores.css';
+
 /* Component - Header*/
 @import './global/header.css';
 @import './global/footer.css';
@@ -20,6 +21,8 @@
 
 /* Seguros */
 @import './seguros/seguros.css';
+@import './seguros/perguntas.css';
+@import './seguros/vantagens.css';
 
 /* Termos */
 @import './termos/termos.css';
